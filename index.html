@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div style="text-align: center; margin-top: 30px; padding-bottom: 20px">
+      <input type="file" id="fileInp" />
+      <input type="text" id="textInp" />
+      <button id="btn">add</button>
+    </div>
+
+    <div
+      class="box"
+      style="
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        text-align: center;
+      "
+    ></div>
+
+    <dialog class="dialog">
+      <input type="file" id="fileInp2" />
+      <input type="text" id="textInp2" />
+      <button id="btn2">edit</button>
+    </dialog>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+    <script src="app.js" type="module"></script>
+    <script src="script.js" type="module"></script>
+  </body>
+</html>
